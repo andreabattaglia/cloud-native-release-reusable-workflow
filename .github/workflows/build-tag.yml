@@ -11,9 +11,6 @@ jobs:
   call-build-tag:
 #    environment: development
     uses: andreabattaglia/reusable-workflows/.github/workflows/build-tag.yml@main
-    # To pass named inputs to a called workflow, use the "with" keyword in a job.
-    with:
-      test_input: testinput
     # Use the "secrets" keyword to pass named secrets.
     secrets:
       ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
