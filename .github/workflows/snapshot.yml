@@ -16,7 +16,7 @@ on:
 
 jobs:
   call-nightly-build:
-    environment: development
+#    environment: development
     uses: andreabattaglia/reusable-workflows/.github/workflows/snapshot.yml@main
     # To pass named inputs to a called workflow, use the "with" keyword in a job.
     with:
