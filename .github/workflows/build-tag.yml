@@ -4,6 +4,8 @@ on:
   release:
     types:
       - created
+    paths-ignore:
+      - .github/workflows/**
 
 jobs:
   call-build-tag:
